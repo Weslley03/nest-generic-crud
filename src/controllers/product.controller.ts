@@ -13,7 +13,7 @@ export class ProductController {
 
   @Get(':id')
   findOne(@Param('id') id: number) {
-    return this.productService.findOne(id);
+    return this.productService.findOneById(id);
   };
 
   @Post()
